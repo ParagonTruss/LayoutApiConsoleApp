@@ -17,7 +17,8 @@ var layoutData = JsonSerializer.Deserialize<LayoutData>(layoutDataContents, new 
 
 using var connection = await Paragon.Connect(ParagonApi.Environments.Environment.Localhost);
 
-var projectGuid = Guid.Parse("330af1ff-561e-4391-8391-d08d8648c02c");
+// Set this to the GUID of your project.
+var projectGuid = Guid.Parse("");
 
 Console.WriteLine("Uploading layout data...");
 
